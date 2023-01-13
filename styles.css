@@ -27,3 +27,11 @@ body {
     height: 400px;
 }
 
+.grid-item {
+    background-color: black;
+}
+
+.hover {
+    background-color: white;
+}
+
