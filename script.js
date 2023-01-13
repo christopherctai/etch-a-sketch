@@ -1,5 +1,5 @@
-let numberOfSquares = 5;
-const grid = document.querySelector('.grid-container');
+let numberOfSquares = 30;
+const grid = document.querySelector('.grid-container'); 
 
 
 function squareNumber (number) {
@@ -16,10 +16,9 @@ for (let i = 1; i <= squareNumber(numberOfSquares); i++) {
 } 
 
 let gridItems = document.querySelectorAll('.grid-item');
-
-gridItems.forEach((gridItem), () => {
-    gridItem.addEventListener('hover', () => {
-        gridItem.style.backgroundColor = "white"; 
-    });
+gridItems.forEach((gridItem) => {
+    gridItem.addEventListener('mouseover', () => { 
+        gridItem.classList.add('hover');  
+    }); 
 });
 
